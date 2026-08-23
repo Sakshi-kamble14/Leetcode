@@ -4,14 +4,13 @@ class Solution {
             if(digits[i]==9){
                 digits[i]=0;
             }
-            else {
+            else{
                 digits[i]++;
                 return digits;
             }
-
         }
         int []newdigit=new int[digits.length+1];
         newdigit[0]=1;
-        return newdigit;
+     return newdigit;
     }
 }
