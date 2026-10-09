@@ -1,0 +1,2 @@
+# Write your MySQL query statement below
+SELECT Visits.customer_id,COUNT(Visits.customer_id) AS count_no_trans from Visits WHERE Visits.visit_id NOT IN(SELECT Transactions.visit_id FROM Transactions) GROUP BY Visits.customer_id ORDER BY COUNT(Visits.customer_id) DESC;
